@@ -3,27 +3,145 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CDE7BB393581D8EBCC39C67 /* Pods_MyStomotology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EFF149F899C075D8E458D9 /* Pods_MyStomotology.framework */; };
 		E1C99A51235F0B900089AC79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A50235F0B900089AC79 /* AppDelegate.swift */; };
 		E1C99A53235F0B900089AC79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A52235F0B900089AC79 /* SceneDelegate.swift */; };
-		E1C99A55235F0B900089AC79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A54235F0B900089AC79 /* ViewController.swift */; };
-		E1C99A58235F0B900089AC79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C99A56235F0B900089AC79 /* Main.storyboard */; };
 		E1C99A5A235F0B930089AC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C99A59235F0B930089AC79 /* Assets.xcassets */; };
 		E1C99A5D235F0B930089AC79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C99A5B235F0B930089AC79 /* LaunchScreen.storyboard */; };
+		E1C99A7A235F23E90089AC79 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A79235F23E90089AC79 /* RateView.swift */; };
+		E1C99A7C235F240C0089AC79 /* RateAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A7B235F240C0089AC79 /* RateAssembler.swift */; };
+		E1C99A7E235F24250089AC79 /* RateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A7D235F24250089AC79 /* RateInteractor.swift */; };
+		E1C99A80235F243B0089AC79 /* RatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A7F235F243B0089AC79 /* RatePresenter.swift */; };
+		E1C99A82235F245C0089AC79 /* RateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A81235F245C0089AC79 /* RateRouter.swift */; };
+		E1C99A86235F248F0089AC79 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A85235F248F0089AC79 /* SplashView.swift */; };
+		E1C99A88235F24A50089AC79 /* SplashAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A87235F24A50089AC79 /* SplashAssembler.swift */; };
+		E1C99A8A235F24CA0089AC79 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A89235F24CA0089AC79 /* SplashPresenter.swift */; };
+		E1C99A8E235F25120089AC79 /* MedServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A8D235F25120089AC79 /* MedServicesView.swift */; };
+		E1C99A90235F252B0089AC79 /* MedServicesAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A8F235F252B0089AC79 /* MedServicesAssembler.swift */; };
+		E1C99A92235F25400089AC79 /* MedServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A91235F25400089AC79 /* MedServicesInteractor.swift */; };
+		E1C99A94235F254E0089AC79 /* MedServicesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A93235F254E0089AC79 /* MedServicesPresenter.swift */; };
+		E1C99A96235F255B0089AC79 /* MedServicesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A95235F255B0089AC79 /* MedServicesRouter.swift */; };
+		E1C99A9B235F27110089AC79 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A9A235F27110089AC79 /* LoginView.swift */; };
+		E1C99A9D235F27250089AC79 /* LoginAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A9C235F27250089AC79 /* LoginAssembler.swift */; };
+		E1C99A9F235F27330089AC79 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A9E235F27330089AC79 /* LoginInteractor.swift */; };
+		E1C99AA1235F273E0089AC79 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AA0235F273E0089AC79 /* LoginPresenter.swift */; };
+		E1C99AA3235F27500089AC79 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AA2235F27500089AC79 /* LoginRouter.swift */; };
+		E1C99AA5235F2FEE0089AC79 /* ClinicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AA4235F2FEE0089AC79 /* ClinicInfoView.swift */; };
+		E1C99AA7235F30010089AC79 /* ClinicInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AA6235F30010089AC79 /* ClinicInfoPresenter.swift */; };
+		E1C99AA9235F30250089AC79 /* ClinicInfoAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AA8235F30250089AC79 /* ClinicInfoAssembler.swift */; };
+		E1C99AAB235F303D0089AC79 /* ClinicInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AAA235F303D0089AC79 /* ClinicInfoInteractor.swift */; };
+		E1C99AAD235F30690089AC79 /* ClinicInfoTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AAC235F30690089AC79 /* ClinicInfoTransition.swift */; };
+		E1C99AAF235F30880089AC79 /* ClinicInfoTransitionableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AAE235F30880089AC79 /* ClinicInfoTransitionableView.swift */; };
+		E1C99AB1235F30B30089AC79 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AB0235F30B30089AC79 /* CommentsView.swift */; };
+		E1C99AB3235F30CA0089AC79 /* CommentsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AB2235F30CA0089AC79 /* CommentsAssembler.swift */; };
+		E1C99AB5235F30DE0089AC79 /* CommentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AB4235F30DE0089AC79 /* CommentsInteractor.swift */; };
+		E1C99AB7235F30EC0089AC79 /* CommentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AB6235F30EC0089AC79 /* CommentsPresenter.swift */; };
+		E1C99AB9235F31200089AC79 /* ClinicInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AB8235F31200089AC79 /* ClinicInfoRouter.swift */; };
+		E1C99ABB235F312D0089AC79 /* CommentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99ABA235F312D0089AC79 /* CommentsRouter.swift */; };
+		E1C99ABD235F31400089AC79 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99ABC235F31400089AC79 /* SettingsView.swift */; };
+		E1C99ABF235F314E0089AC79 /* SettingsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99ABE235F314E0089AC79 /* SettingsAssembler.swift */; };
+		E1C99AC1235F315A0089AC79 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AC0235F315A0089AC79 /* SettingsInteractor.swift */; };
+		E1C99AC3235F31650089AC79 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AC2235F31650089AC79 /* SettingsPresenter.swift */; };
+		E1C99AC5235F317B0089AC79 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AC4235F317B0089AC79 /* SettingsRouter.swift */; };
+		E1C99AC7235F31DB0089AC79 /* SharesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AC6235F31DB0089AC79 /* SharesView.swift */; };
+		E1C99AC9235F31E60089AC79 /* SharesAssmbler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AC8235F31E60089AC79 /* SharesAssmbler.swift */; };
+		E1C99ACB235F32070089AC79 /* SharesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99ACA235F32070089AC79 /* SharesInteractor.swift */; };
+		E1C99ACD235F32150089AC79 /* SharesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99ACC235F32150089AC79 /* SharesPresenter.swift */; };
+		E1C99ACF235F32200089AC79 /* SharesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99ACE235F32200089AC79 /* SharesRouter.swift */; };
+		E1C99AD1235F323E0089AC79 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AD0235F323E0089AC79 /* TabBarView.swift */; };
+		E1C99AD3235F32800089AC79 /* TabBarTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AD2235F32800089AC79 /* TabBarTransition.swift */; };
+		E1C99AD5235F328D0089AC79 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AD4235F328D0089AC79 /* MapView.swift */; };
+		E1C99AD7235F329C0089AC79 /* MapAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AD6235F329C0089AC79 /* MapAssembler.swift */; };
+		E1C99AD9235F32A90089AC79 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AD8235F32A90089AC79 /* MapInteractor.swift */; };
+		E1C99ADB235F32B20089AC79 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99ADA235F32B20089AC79 /* MapPresenter.swift */; };
+		E1C99ADD235F32C40089AC79 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99ADC235F32C40089AC79 /* MapRouter.swift */; };
+		E1C99ADF235F33DD0089AC79 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99ADE235F33DD0089AC79 /* LocationService.swift */; };
+		E1C99AE1235F33EC0089AC79 /* LocationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AE0235F33EC0089AC79 /* LocationLoader.swift */; };
+		E1C99AE3235F34090089AC79 /* ClinicsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AE2235F34090089AC79 /* ClinicsLoader.swift */; };
+		E1C99AE5235F341E0089AC79 /* CommentsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AE4235F341E0089AC79 /* CommentsLoader.swift */; };
+		E1C99AE7235F342B0089AC79 /* SharesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AE6235F342B0089AC79 /* SharesLoader.swift */; };
+		E1C99AE9235F34670089AC79 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AE8235F34670089AC79 /* Location.swift */; };
+		E1C99AEB235F34720089AC79 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AEA235F34720089AC79 /* Share.swift */; };
+		E1C99AED235F347A0089AC79 /* Clinic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AEC235F347A0089AC79 /* Clinic.swift */; };
+		E1C99AEF235F34860089AC79 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99AEE235F34860089AC79 /* Comment.swift */; };
+		E1F2855B236055A200C564C7 /* ApplicationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F2855A236055A200C564C7 /* ApplicationAssembler.swift */; };
+		E1F2855D23605A5D00C564C7 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F2855C23605A5D00C564C7 /* SplashRouter.swift */; };
+		E1F2855F23605BCE00C564C7 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F2855E23605BCE00C564C7 /* BaseRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		200BEF2F54A698B19D2C18D4 /* Pods-MyStomotology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStomotology.release.xcconfig"; path = "Target Support Files/Pods-MyStomotology/Pods-MyStomotology.release.xcconfig"; sourceTree = "<group>"; };
+		89EFF149F899C075D8E458D9 /* Pods_MyStomotology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyStomotology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9472B3DC4D68EDC3E908596F /* Pods-MyStomotology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStomotology.debug.xcconfig"; path = "Target Support Files/Pods-MyStomotology/Pods-MyStomotology.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C99A4D235F0B900089AC79 /* MyStomotology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStomotology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C99A50235F0B900089AC79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1C99A52235F0B900089AC79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E1C99A54235F0B900089AC79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E1C99A57235F0B900089AC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1C99A59235F0B930089AC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C99A5C235F0B930089AC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1C99A5E235F0B930089AC79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C99A79235F23E90089AC79 /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		E1C99A7B235F240C0089AC79 /* RateAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateAssembler.swift; sourceTree = "<group>"; };
+		E1C99A7D235F24250089AC79 /* RateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateInteractor.swift; sourceTree = "<group>"; };
+		E1C99A7F235F243B0089AC79 /* RatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatePresenter.swift; sourceTree = "<group>"; };
+		E1C99A81235F245C0089AC79 /* RateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRouter.swift; sourceTree = "<group>"; };
+		E1C99A85235F248F0089AC79 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E1C99A87235F24A50089AC79 /* SplashAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembler.swift; sourceTree = "<group>"; };
+		E1C99A89235F24CA0089AC79 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		E1C99A8D235F25120089AC79 /* MedServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedServicesView.swift; sourceTree = "<group>"; };
+		E1C99A8F235F252B0089AC79 /* MedServicesAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedServicesAssembler.swift; sourceTree = "<group>"; };
+		E1C99A91235F25400089AC79 /* MedServicesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedServicesInteractor.swift; sourceTree = "<group>"; };
+		E1C99A93235F254E0089AC79 /* MedServicesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedServicesPresenter.swift; sourceTree = "<group>"; };
+		E1C99A95235F255B0089AC79 /* MedServicesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedServicesRouter.swift; sourceTree = "<group>"; };
+		E1C99A9A235F27110089AC79 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E1C99A9C235F27250089AC79 /* LoginAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembler.swift; sourceTree = "<group>"; };
+		E1C99A9E235F27330089AC79 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		E1C99AA0235F273E0089AC79 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E1C99AA2235F27500089AC79 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		E1C99AA4235F2FEE0089AC79 /* ClinicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicInfoView.swift; sourceTree = "<group>"; };
+		E1C99AA6235F30010089AC79 /* ClinicInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicInfoPresenter.swift; sourceTree = "<group>"; };
+		E1C99AA8235F30250089AC79 /* ClinicInfoAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicInfoAssembler.swift; sourceTree = "<group>"; };
+		E1C99AAA235F303D0089AC79 /* ClinicInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicInfoInteractor.swift; sourceTree = "<group>"; };
+		E1C99AAC235F30690089AC79 /* ClinicInfoTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicInfoTransition.swift; sourceTree = "<group>"; };
+		E1C99AAE235F30880089AC79 /* ClinicInfoTransitionableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicInfoTransitionableView.swift; sourceTree = "<group>"; };
+		E1C99AB0235F30B30089AC79 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		E1C99AB2235F30CA0089AC79 /* CommentsAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsAssembler.swift; sourceTree = "<group>"; };
+		E1C99AB4235F30DE0089AC79 /* CommentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInteractor.swift; sourceTree = "<group>"; };
+		E1C99AB6235F30EC0089AC79 /* CommentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsPresenter.swift; sourceTree = "<group>"; };
+		E1C99AB8235F31200089AC79 /* ClinicInfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicInfoRouter.swift; sourceTree = "<group>"; };
+		E1C99ABA235F312D0089AC79 /* CommentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRouter.swift; sourceTree = "<group>"; };
+		E1C99ABC235F31400089AC79 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E1C99ABE235F314E0089AC79 /* SettingsAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAssembler.swift; sourceTree = "<group>"; };
+		E1C99AC0235F315A0089AC79 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		E1C99AC2235F31650089AC79 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		E1C99AC4235F317B0089AC79 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		E1C99AC6235F31DB0089AC79 /* SharesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesView.swift; sourceTree = "<group>"; };
+		E1C99AC8235F31E60089AC79 /* SharesAssmbler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesAssmbler.swift; sourceTree = "<group>"; };
+		E1C99ACA235F32070089AC79 /* SharesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesInteractor.swift; sourceTree = "<group>"; };
+		E1C99ACC235F32150089AC79 /* SharesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesPresenter.swift; sourceTree = "<group>"; };
+		E1C99ACE235F32200089AC79 /* SharesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesRouter.swift; sourceTree = "<group>"; };
+		E1C99AD0235F323E0089AC79 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		E1C99AD2235F32800089AC79 /* TabBarTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarTransition.swift; sourceTree = "<group>"; };
+		E1C99AD4235F328D0089AC79 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E1C99AD6235F329C0089AC79 /* MapAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAssembler.swift; sourceTree = "<group>"; };
+		E1C99AD8235F32A90089AC79 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		E1C99ADA235F32B20089AC79 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		E1C99ADC235F32C40089AC79 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		E1C99ADE235F33DD0089AC79 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E1C99AE0235F33EC0089AC79 /* LocationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLoader.swift; sourceTree = "<group>"; };
+		E1C99AE2235F34090089AC79 /* ClinicsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsLoader.swift; sourceTree = "<group>"; };
+		E1C99AE4235F341E0089AC79 /* CommentsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsLoader.swift; sourceTree = "<group>"; };
+		E1C99AE6235F342B0089AC79 /* SharesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesLoader.swift; sourceTree = "<group>"; };
+		E1C99AE8235F34670089AC79 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E1C99AEA235F34720089AC79 /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
+		E1C99AEC235F347A0089AC79 /* Clinic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clinic.swift; sourceTree = "<group>"; };
+		E1C99AEE235F34860089AC79 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E1F2855A236055A200C564C7 /* ApplicationAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembler.swift; sourceTree = "<group>"; };
+		E1F2855C23605A5D00C564C7 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		E1F2855E23605BCE00C564C7 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +149,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDE7BB393581D8EBCC39C67 /* Pods_MyStomotology.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		468884D78E08AEA6A8DA7E4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9472B3DC4D68EDC3E908596F /* Pods-MyStomotology.debug.xcconfig */,
+				200BEF2F54A698B19D2C18D4 /* Pods-MyStomotology.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A128EDF03E7E04479FA7C1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89EFF149F899C075D8E458D9 /* Pods_MyStomotology.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1C99A44235F0B8F0089AC79 = {
 			isa = PBXGroup;
 			children = (
 				E1C99A4F235F0B900089AC79 /* MyStomotology */,
 				E1C99A4E235F0B900089AC79 /* Products */,
+				468884D78E08AEA6A8DA7E4E /* Pods */,
+				7A128EDF03E7E04479FA7C1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +194,232 @@
 		E1C99A4F235F0B900089AC79 /* MyStomotology */ = {
 			isa = PBXGroup;
 			children = (
-				E1C99A50235F0B900089AC79 /* AppDelegate.swift */,
-				E1C99A52235F0B900089AC79 /* SceneDelegate.swift */,
-				E1C99A54235F0B900089AC79 /* ViewController.swift */,
-				E1C99A56235F0B900089AC79 /* Main.storyboard */,
-				E1C99A59235F0B930089AC79 /* Assets.xcassets */,
-				E1C99A5B235F0B930089AC79 /* LaunchScreen.storyboard */,
 				E1C99A5E235F0B930089AC79 /* Info.plist */,
+				E1C99A67235F0D880089AC79 /* Resources */,
+				E1C99A66235F0D590089AC79 /* Modules */,
+				E1C99A65235F0D4E0089AC79 /* Commons */,
+				E1C99A64235F0D2F0089AC79 /* Application */,
 			);
 			path = MyStomotology;
+			sourceTree = "<group>";
+		};
+		E1C99A64235F0D2F0089AC79 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99A50235F0B900089AC79 /* AppDelegate.swift */,
+				E1C99A52235F0B900089AC79 /* SceneDelegate.swift */,
+				E1F2855A236055A200C564C7 /* ApplicationAssembler.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E1C99A65235F0D4E0089AC79 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99A6D235F0E5A0089AC79 /* Services */,
+				E1C99A6C235F0E540089AC79 /* Models */,
+				E1C99A6B235F0E4C0089AC79 /* Prototypes */,
+				E1C99A6A235F0E430089AC79 /* Extention */,
+				E1C99A69235F0E3D0089AC79 /* UI */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		E1C99A66235F0D590089AC79 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99A97235F26D00089AC79 /* Login */,
+				E1C99A76235F12A50089AC79 /* Rate */,
+				E1C99A75235F107C0089AC79 /* Splash */,
+				E1C99A74235F104A0089AC79 /* MedServices */,
+				E1C99A73235F102E0089AC79 /* Clinic Info */,
+				E1C99A72235F10260089AC79 /* Comments */,
+				E1C99A71235F0F860089AC79 /* Settings */,
+				E1C99A70235F0F720089AC79 /* Shares */,
+				E1C99A6F235F0F630089AC79 /* Tab bar */,
+				E1C99A6E235F0F5E0089AC79 /* Map */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E1C99A67235F0D880089AC79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99A68235F0DD60089AC79 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1C99A68235F0DD60089AC79 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99A59235F0B930089AC79 /* Assets.xcassets */,
+				E1C99A5B235F0B930089AC79 /* LaunchScreen.storyboard */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E1C99A69235F0E3D0089AC79 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E1C99A6A235F0E430089AC79 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		E1C99A6B235F0E4C0089AC79 /* Prototypes */ = {
+			isa = PBXGroup;
+			children = (
+				E1F2855E23605BCE00C564C7 /* BaseRouter.swift */,
+			);
+			path = Prototypes;
+			sourceTree = "<group>";
+		};
+		E1C99A6C235F0E540089AC79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99AE8235F34670089AC79 /* Location.swift */,
+				E1C99AEA235F34720089AC79 /* Share.swift */,
+				E1C99AEC235F347A0089AC79 /* Clinic.swift */,
+				E1C99AEE235F34860089AC79 /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1C99A6D235F0E5A0089AC79 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99ADE235F33DD0089AC79 /* LocationService.swift */,
+				E1C99AE0235F33EC0089AC79 /* LocationLoader.swift */,
+				E1C99AE2235F34090089AC79 /* ClinicsLoader.swift */,
+				E1C99AE4235F341E0089AC79 /* CommentsLoader.swift */,
+				E1C99AE6235F342B0089AC79 /* SharesLoader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E1C99A6E235F0F5E0089AC79 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99AD4235F328D0089AC79 /* MapView.swift */,
+				E1C99AD6235F329C0089AC79 /* MapAssembler.swift */,
+				E1C99AD8235F32A90089AC79 /* MapInteractor.swift */,
+				E1C99ADA235F32B20089AC79 /* MapPresenter.swift */,
+				E1C99ADC235F32C40089AC79 /* MapRouter.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		E1C99A6F235F0F630089AC79 /* Tab bar */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99AD0235F323E0089AC79 /* TabBarView.swift */,
+				E1C99AD2235F32800089AC79 /* TabBarTransition.swift */,
+			);
+			path = "Tab bar";
+			sourceTree = "<group>";
+		};
+		E1C99A70235F0F720089AC79 /* Shares */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99AC6235F31DB0089AC79 /* SharesView.swift */,
+				E1C99AC8235F31E60089AC79 /* SharesAssmbler.swift */,
+				E1C99ACA235F32070089AC79 /* SharesInteractor.swift */,
+				E1C99ACC235F32150089AC79 /* SharesPresenter.swift */,
+				E1C99ACE235F32200089AC79 /* SharesRouter.swift */,
+			);
+			path = Shares;
+			sourceTree = "<group>";
+		};
+		E1C99A71235F0F860089AC79 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99ABC235F31400089AC79 /* SettingsView.swift */,
+				E1C99ABE235F314E0089AC79 /* SettingsAssembler.swift */,
+				E1C99AC0235F315A0089AC79 /* SettingsInteractor.swift */,
+				E1C99AC2235F31650089AC79 /* SettingsPresenter.swift */,
+				E1C99AC4235F317B0089AC79 /* SettingsRouter.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E1C99A72235F10260089AC79 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99AB0235F30B30089AC79 /* CommentsView.swift */,
+				E1C99AB2235F30CA0089AC79 /* CommentsAssembler.swift */,
+				E1C99AB4235F30DE0089AC79 /* CommentsInteractor.swift */,
+				E1C99AB6235F30EC0089AC79 /* CommentsPresenter.swift */,
+				E1C99ABA235F312D0089AC79 /* CommentsRouter.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		E1C99A73235F102E0089AC79 /* Clinic Info */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99AA4235F2FEE0089AC79 /* ClinicInfoView.swift */,
+				E1C99AA8235F30250089AC79 /* ClinicInfoAssembler.swift */,
+				E1C99AAA235F303D0089AC79 /* ClinicInfoInteractor.swift */,
+				E1C99AA6235F30010089AC79 /* ClinicInfoPresenter.swift */,
+				E1C99AAC235F30690089AC79 /* ClinicInfoTransition.swift */,
+				E1C99AAE235F30880089AC79 /* ClinicInfoTransitionableView.swift */,
+				E1C99AB8235F31200089AC79 /* ClinicInfoRouter.swift */,
+			);
+			path = "Clinic Info";
+			sourceTree = "<group>";
+		};
+		E1C99A74235F104A0089AC79 /* MedServices */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99A8D235F25120089AC79 /* MedServicesView.swift */,
+				E1C99A8F235F252B0089AC79 /* MedServicesAssembler.swift */,
+				E1C99A91235F25400089AC79 /* MedServicesInteractor.swift */,
+				E1C99A93235F254E0089AC79 /* MedServicesPresenter.swift */,
+				E1C99A95235F255B0089AC79 /* MedServicesRouter.swift */,
+			);
+			path = MedServices;
+			sourceTree = "<group>";
+		};
+		E1C99A75235F107C0089AC79 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99A85235F248F0089AC79 /* SplashView.swift */,
+				E1C99A87235F24A50089AC79 /* SplashAssembler.swift */,
+				E1C99A89235F24CA0089AC79 /* SplashPresenter.swift */,
+				E1F2855C23605A5D00C564C7 /* SplashRouter.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		E1C99A76235F12A50089AC79 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99A79235F23E90089AC79 /* RateView.swift */,
+				E1C99A7B235F240C0089AC79 /* RateAssembler.swift */,
+				E1C99A7D235F24250089AC79 /* RateInteractor.swift */,
+				E1C99A7F235F243B0089AC79 /* RatePresenter.swift */,
+				E1C99A81235F245C0089AC79 /* RateRouter.swift */,
+			);
+			path = Rate;
+			sourceTree = "<group>";
+		};
+		E1C99A97235F26D00089AC79 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E1C99A9A235F27110089AC79 /* LoginView.swift */,
+				E1C99A9C235F27250089AC79 /* LoginAssembler.swift */,
+				E1C99A9E235F27330089AC79 /* LoginInteractor.swift */,
+				E1C99AA0235F273E0089AC79 /* LoginPresenter.swift */,
+				E1C99AA2235F27500089AC79 /* LoginRouter.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +429,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1C99A61235F0B930089AC79 /* Build configuration list for PBXNativeTarget "MyStomotology" */;
 			buildPhases = (
+				2F3747042CE69424D89D07D8 /* [CP] Check Pods Manifest.lock */,
 				E1C99A49235F0B900089AC79 /* Sources */,
 				E1C99A4A235F0B900089AC79 /* Frameworks */,
 				E1C99A4B235F0B900089AC79 /* Resources */,
+				E7D7C8B576BBB51ABAE6D01B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +484,125 @@
 			files = (
 				E1C99A5D235F0B930089AC79 /* LaunchScreen.storyboard in Resources */,
 				E1C99A5A235F0B930089AC79 /* Assets.xcassets in Resources */,
-				E1C99A58235F0B900089AC79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F3747042CE69424D89D07D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyStomotology-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D7C8B576BBB51ABAE6D01B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyStomotology/Pods-MyStomotology-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyStomotology/Pods-MyStomotology-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyStomotology/Pods-MyStomotology-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1C99A49235F0B900089AC79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C99A55235F0B900089AC79 /* ViewController.swift in Sources */,
+				E1C99AD3235F32800089AC79 /* TabBarTransition.swift in Sources */,
+				E1C99AE5235F341E0089AC79 /* CommentsLoader.swift in Sources */,
+				E1C99AD7235F329C0089AC79 /* MapAssembler.swift in Sources */,
+				E1C99A80235F243B0089AC79 /* RatePresenter.swift in Sources */,
+				E1C99A8A235F24CA0089AC79 /* SplashPresenter.swift in Sources */,
+				E1C99AB1235F30B30089AC79 /* CommentsView.swift in Sources */,
+				E1C99AE1235F33EC0089AC79 /* LocationLoader.swift in Sources */,
+				E1C99AC1235F315A0089AC79 /* SettingsInteractor.swift in Sources */,
+				E1C99A86235F248F0089AC79 /* SplashView.swift in Sources */,
+				E1C99AEB235F34720089AC79 /* Share.swift in Sources */,
+				E1C99A94235F254E0089AC79 /* MedServicesPresenter.swift in Sources */,
+				E1C99AEF235F34860089AC79 /* Comment.swift in Sources */,
+				E1F2855F23605BCE00C564C7 /* BaseRouter.swift in Sources */,
+				E1C99AD5235F328D0089AC79 /* MapView.swift in Sources */,
+				E1C99AA1235F273E0089AC79 /* LoginPresenter.swift in Sources */,
+				E1C99AE9235F34670089AC79 /* Location.swift in Sources */,
+				E1C99A7E235F24250089AC79 /* RateInteractor.swift in Sources */,
+				E1C99AD9235F32A90089AC79 /* MapInteractor.swift in Sources */,
+				E1C99AB5235F30DE0089AC79 /* CommentsInteractor.swift in Sources */,
+				E1C99A7C235F240C0089AC79 /* RateAssembler.swift in Sources */,
+				E1C99AE7235F342B0089AC79 /* SharesLoader.swift in Sources */,
+				E1C99A9D235F27250089AC79 /* LoginAssembler.swift in Sources */,
+				E1C99AA7235F30010089AC79 /* ClinicInfoPresenter.swift in Sources */,
+				E1C99A8E235F25120089AC79 /* MedServicesView.swift in Sources */,
+				E1C99AB9235F31200089AC79 /* ClinicInfoRouter.swift in Sources */,
+				E1C99ADD235F32C40089AC79 /* MapRouter.swift in Sources */,
+				E1F2855D23605A5D00C564C7 /* SplashRouter.swift in Sources */,
+				E1C99ACF235F32200089AC79 /* SharesRouter.swift in Sources */,
+				E1C99A9F235F27330089AC79 /* LoginInteractor.swift in Sources */,
+				E1C99AAD235F30690089AC79 /* ClinicInfoTransition.swift in Sources */,
+				E1C99AA5235F2FEE0089AC79 /* ClinicInfoView.swift in Sources */,
+				E1C99AAF235F30880089AC79 /* ClinicInfoTransitionableView.swift in Sources */,
+				E1C99ACB235F32070089AC79 /* SharesInteractor.swift in Sources */,
 				E1C99A51235F0B900089AC79 /* AppDelegate.swift in Sources */,
+				E1C99AC9235F31E60089AC79 /* SharesAssmbler.swift in Sources */,
+				E1C99A82235F245C0089AC79 /* RateRouter.swift in Sources */,
 				E1C99A53235F0B900089AC79 /* SceneDelegate.swift in Sources */,
+				E1C99AB3235F30CA0089AC79 /* CommentsAssembler.swift in Sources */,
+				E1C99ABD235F31400089AC79 /* SettingsView.swift in Sources */,
+				E1C99ACD235F32150089AC79 /* SharesPresenter.swift in Sources */,
+				E1C99AC3235F31650089AC79 /* SettingsPresenter.swift in Sources */,
+				E1C99A92235F25400089AC79 /* MedServicesInteractor.swift in Sources */,
+				E1F2855B236055A200C564C7 /* ApplicationAssembler.swift in Sources */,
+				E1C99ABB235F312D0089AC79 /* CommentsRouter.swift in Sources */,
+				E1C99A90235F252B0089AC79 /* MedServicesAssembler.swift in Sources */,
+				E1C99ADB235F32B20089AC79 /* MapPresenter.swift in Sources */,
+				E1C99A88235F24A50089AC79 /* SplashAssembler.swift in Sources */,
+				E1C99AC5235F317B0089AC79 /* SettingsRouter.swift in Sources */,
+				E1C99A7A235F23E90089AC79 /* RateView.swift in Sources */,
+				E1C99AB7235F30EC0089AC79 /* CommentsPresenter.swift in Sources */,
+				E1C99AD1235F323E0089AC79 /* TabBarView.swift in Sources */,
+				E1C99ADF235F33DD0089AC79 /* LocationService.swift in Sources */,
+				E1C99A9B235F27110089AC79 /* LoginView.swift in Sources */,
+				E1C99AA3235F27500089AC79 /* LoginRouter.swift in Sources */,
+				E1C99A96235F255B0089AC79 /* MedServicesRouter.swift in Sources */,
+				E1C99AED235F347A0089AC79 /* Clinic.swift in Sources */,
+				E1C99AC7235F31DB0089AC79 /* SharesView.swift in Sources */,
+				E1C99AAB235F303D0089AC79 /* ClinicInfoInteractor.swift in Sources */,
+				E1C99AA9235F30250089AC79 /* ClinicInfoAssembler.swift in Sources */,
+				E1C99AE3235F34090089AC79 /* ClinicsLoader.swift in Sources */,
+				E1C99ABF235F314E0089AC79 /* SettingsAssembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E1C99A56235F0B900089AC79 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1C99A57235F0B900089AC79 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E1C99A5B235F0B930089AC79 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +730,7 @@
 		};
 		E1C99A62235F0B930089AC79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9472B3DC4D68EDC3E908596F /* Pods-MyStomotology.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +749,7 @@
 		};
 		E1C99A63235F0B930089AC79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 200BEF2F54A698B19D2C18D4 /* Pods-MyStomotology.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
