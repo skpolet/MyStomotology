@@ -15,12 +15,13 @@ protocol SplashViewProtocol: class {
 class SplashView: ASViewController<ASDisplayNode> {
     
     private let assembler: SplashAssemblerProtocol = SplashAssembler()
-    var presenter: SplashPresenterProtocol!
+    var presenter: SplashPresenterProtocol?
     
     //let textNode = ASTextNode()
     
     init() {
         super.init(node: SplashPictureNode())
+
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -29,8 +30,9 @@ class SplashView: ASViewController<ASDisplayNode> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        assembler.assemble(with: self)
-        presenter.viewDidLoad()
+        //assembler.assemble(with: self)
+        //presenter.viewDidLoad()
+        view.backgroundColor = .white
     }
         
     override func viewWillAppear(_ animated: Bool) {
@@ -41,10 +43,13 @@ class SplashView: ASViewController<ASDisplayNode> {
 
 class SplashPictureNode: ASDisplayNode {
     
+    var presenter: SplashPresenterProtocol?
+    
     override required init() {
         super.init()
         automaticallyManagesSubnodes = true
         backgroundColor = .white
+        presenter = SplashPresenter()
     }
 }
 
@@ -57,8 +62,7 @@ extension SplashPictureNode {
         let attrs = [NSAttributedString.Key.font: UIFont(name: "Arial", size: 16.0)!, NSAttributedString.Key.paragraphStyle: paragraph ]
         let string = NSAttributedString(string: "Splash Screen", attributes: attrs)
         textNode.attributedText = string
-        textNode.textContainerInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20);
-        
+        textNode.textContainerInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
         
         return ASCenterLayoutSpec(centeringOptions: ASCenterLayoutSpecCenteringOptions.XY, sizingOptions: ASCenterLayoutSpecSizingOptions.minimumXY, child: textNode)
     }

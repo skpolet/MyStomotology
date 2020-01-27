@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0CDE7BB393581D8EBCC39C67 /* Pods_MyStomotology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EFF149F899C075D8E458D9 /* Pods_MyStomotology.framework */; };
+		E1AB908123D488BE006D4346 /* SplashAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB908023D488BE006D4346 /* SplashAssembler.swift */; };
+		E1AB908323D488D2006D4346 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB908223D488D2006D4346 /* SplashPresenter.swift */; };
 		E1C99A51235F0B900089AC79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A50235F0B900089AC79 /* AppDelegate.swift */; };
-		E1C99A53235F0B900089AC79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A52235F0B900089AC79 /* SceneDelegate.swift */; };
 		E1C99A5A235F0B930089AC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C99A59235F0B930089AC79 /* Assets.xcassets */; };
 		E1C99A5D235F0B930089AC79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C99A5B235F0B930089AC79 /* LaunchScreen.storyboard */; };
 		E1C99A7A235F23E90089AC79 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A79235F23E90089AC79 /* RateView.swift */; };
@@ -18,8 +19,6 @@
 		E1C99A80235F243B0089AC79 /* RatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A7F235F243B0089AC79 /* RatePresenter.swift */; };
 		E1C99A82235F245C0089AC79 /* RateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A81235F245C0089AC79 /* RateRouter.swift */; };
 		E1C99A86235F248F0089AC79 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A85235F248F0089AC79 /* SplashView.swift */; };
-		E1C99A88235F24A50089AC79 /* SplashAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A87235F24A50089AC79 /* SplashAssembler.swift */; };
-		E1C99A8A235F24CA0089AC79 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A89235F24CA0089AC79 /* SplashPresenter.swift */; };
 		E1C99A8E235F25120089AC79 /* MedServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A8D235F25120089AC79 /* MedServicesView.swift */; };
 		E1C99A90235F252B0089AC79 /* MedServicesAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A8F235F252B0089AC79 /* MedServicesAssembler.swift */; };
 		E1C99A92235F25400089AC79 /* MedServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A91235F25400089AC79 /* MedServicesInteractor.swift */; };
@@ -77,9 +76,10 @@
 		200BEF2F54A698B19D2C18D4 /* Pods-MyStomotology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStomotology.release.xcconfig"; path = "Target Support Files/Pods-MyStomotology/Pods-MyStomotology.release.xcconfig"; sourceTree = "<group>"; };
 		89EFF149F899C075D8E458D9 /* Pods_MyStomotology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyStomotology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9472B3DC4D68EDC3E908596F /* Pods-MyStomotology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStomotology.debug.xcconfig"; path = "Target Support Files/Pods-MyStomotology/Pods-MyStomotology.debug.xcconfig"; sourceTree = "<group>"; };
+		E1AB908023D488BE006D4346 /* SplashAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembler.swift; sourceTree = "<group>"; };
+		E1AB908223D488D2006D4346 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		E1C99A4D235F0B900089AC79 /* MyStomotology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStomotology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C99A50235F0B900089AC79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1C99A52235F0B900089AC79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E1C99A59235F0B930089AC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C99A5C235F0B930089AC79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1C99A5E235F0B930089AC79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,8 +89,6 @@
 		E1C99A7F235F243B0089AC79 /* RatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatePresenter.swift; sourceTree = "<group>"; };
 		E1C99A81235F245C0089AC79 /* RateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRouter.swift; sourceTree = "<group>"; };
 		E1C99A85235F248F0089AC79 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		E1C99A87235F24A50089AC79 /* SplashAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembler.swift; sourceTree = "<group>"; };
-		E1C99A89235F24CA0089AC79 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		E1C99A8D235F25120089AC79 /* MedServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedServicesView.swift; sourceTree = "<group>"; };
 		E1C99A8F235F252B0089AC79 /* MedServicesAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedServicesAssembler.swift; sourceTree = "<group>"; };
 		E1C99A91235F25400089AC79 /* MedServicesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedServicesInteractor.swift; sourceTree = "<group>"; };
@@ -207,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				E1C99A50235F0B900089AC79 /* AppDelegate.swift */,
-				E1C99A52235F0B900089AC79 /* SceneDelegate.swift */,
 				E1F2855A236055A200C564C7 /* ApplicationAssembler.swift */,
 			);
 			path = Application;
@@ -391,8 +388,8 @@
 			isa = PBXGroup;
 			children = (
 				E1C99A85235F248F0089AC79 /* SplashView.swift */,
-				E1C99A87235F24A50089AC79 /* SplashAssembler.swift */,
-				E1C99A89235F24CA0089AC79 /* SplashPresenter.swift */,
+				E1AB908023D488BE006D4346 /* SplashAssembler.swift */,
+				E1AB908223D488D2006D4346 /* SplashPresenter.swift */,
 				E1F2855C23605A5D00C564C7 /* SplashRouter.swift */,
 			);
 			path = Splash;
@@ -433,7 +430,8 @@
 				E1C99A49235F0B900089AC79 /* Sources */,
 				E1C99A4A235F0B900089AC79 /* Frameworks */,
 				E1C99A4B235F0B900089AC79 /* Resources */,
-				E7D7C8B576BBB51ABAE6D01B /* [CP] Embed Pods Frameworks */,
+				5435A9D7E9328C47E52BA79E /* [CP] Embed Pods Frameworks */,
+				1CF12527DBC5F405034DFAFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -490,6 +488,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1CF12527DBC5F405034DFAFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyStomotology/Pods-MyStomotology-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyStomotology/Pods-MyStomotology-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyStomotology/Pods-MyStomotology-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2F3747042CE69424D89D07D8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,7 +527,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E7D7C8B576BBB51ABAE6D01B /* [CP] Embed Pods Frameworks */ = {
+		5435A9D7E9328C47E52BA79E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,7 +555,6 @@
 				E1C99AE5235F341E0089AC79 /* CommentsLoader.swift in Sources */,
 				E1C99AD7235F329C0089AC79 /* MapAssembler.swift in Sources */,
 				E1C99A80235F243B0089AC79 /* RatePresenter.swift in Sources */,
-				E1C99A8A235F24CA0089AC79 /* SplashPresenter.swift in Sources */,
 				E1C99AB1235F30B30089AC79 /* CommentsView.swift in Sources */,
 				E1C99AE1235F33EC0089AC79 /* LocationLoader.swift in Sources */,
 				E1C99AC1235F315A0089AC79 /* SettingsInteractor.swift in Sources */,
@@ -562,6 +576,8 @@
 				E1C99A8E235F25120089AC79 /* MedServicesView.swift in Sources */,
 				E1C99AB9235F31200089AC79 /* ClinicInfoRouter.swift in Sources */,
 				E1C99ADD235F32C40089AC79 /* MapRouter.swift in Sources */,
+				E1AB908123D488BE006D4346 /* SplashAssembler.swift in Sources */,
+				E1AB908323D488D2006D4346 /* SplashPresenter.swift in Sources */,
 				E1F2855D23605A5D00C564C7 /* SplashRouter.swift in Sources */,
 				E1C99ACF235F32200089AC79 /* SharesRouter.swift in Sources */,
 				E1C99A9F235F27330089AC79 /* LoginInteractor.swift in Sources */,
@@ -572,7 +588,6 @@
 				E1C99A51235F0B900089AC79 /* AppDelegate.swift in Sources */,
 				E1C99AC9235F31E60089AC79 /* SharesAssmbler.swift in Sources */,
 				E1C99A82235F245C0089AC79 /* RateRouter.swift in Sources */,
-				E1C99A53235F0B900089AC79 /* SceneDelegate.swift in Sources */,
 				E1C99AB3235F30CA0089AC79 /* CommentsAssembler.swift in Sources */,
 				E1C99ABD235F31400089AC79 /* SettingsView.swift in Sources */,
 				E1C99ACD235F32150089AC79 /* SharesPresenter.swift in Sources */,
@@ -582,7 +597,6 @@
 				E1C99ABB235F312D0089AC79 /* CommentsRouter.swift in Sources */,
 				E1C99A90235F252B0089AC79 /* MedServicesAssembler.swift in Sources */,
 				E1C99ADB235F32B20089AC79 /* MapPresenter.swift in Sources */,
-				E1C99A88235F24A50089AC79 /* SplashAssembler.swift in Sources */,
 				E1C99AC5235F317B0089AC79 /* SettingsRouter.swift in Sources */,
 				E1C99A7A235F23E90089AC79 /* RateView.swift in Sources */,
 				E1C99AB7235F30EC0089AC79 /* CommentsPresenter.swift in Sources */,
@@ -664,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -718,7 +732,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -733,15 +747,18 @@
 			baseConfigurationReference = 9472B3DC4D68EDC3E908596F /* Pods-MyStomotology.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XBW4F9AQY3;
 				INFOPLIST_FILE = MyStomotology/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Stomatology.MyStomotology;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -752,15 +769,18 @@
 			baseConfigurationReference = 200BEF2F54A698B19D2C18D4 /* Pods-MyStomotology.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XBW4F9AQY3;
 				INFOPLIST_FILE = MyStomotology/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Stomatology.MyStomotology;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
