@@ -1,5 +1,5 @@
 //
-//  ErrorHandlingProtocols.swift
+//  MessageHandlingProtocols.swift
 //  MyStomotology
 //
 //  Created by Sergey Mikhailov on 02.02.2020.
@@ -11,13 +11,15 @@ import Foundation
 enum TypeMessage {
     case error
     case warning
+    case message
+    case notification
 }
 
-protocol MessageObject {
-    func showMessage()
+protocol MessageHandlingProtocol {
+    func showMessage(title: String?, subtitle: String?, typeMessage: TypeMessage, completion: Completion?)
 }
 
-protocol MessageVisitor {
+protocol MessageVisitorProtocol {
     func showTableMessage()
     func showAllertMessage()
     func showNotificationMessage()

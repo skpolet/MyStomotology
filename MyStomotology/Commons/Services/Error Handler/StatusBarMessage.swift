@@ -6,4 +6,8 @@
 //  Copyright © 2020 Mikhailov. All rights reserved.
 //
 
-import Foundation
+class StatusBarMessage: MessageHandlingProtocol {
+    func showMessage(title: String?, subtitle: String?, typeMessage: TypeMessage, completion: Completion?) {
+        
+    }
+}

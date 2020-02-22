@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class TableMessage: MessageHandlingProtocol {
+    func showMessage(title: String?, subtitle: String?, typeMessage: TypeMessage, completion: Completion?) {
+        
+    }
+}

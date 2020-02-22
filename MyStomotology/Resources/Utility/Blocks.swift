@@ -6,4 +6,4 @@
 //  Copyright © 2020 Mikhailov. All rights reserved.
 //
 
-import Foundation
+typealias Completion = (Bool, Any, Error) -> Void

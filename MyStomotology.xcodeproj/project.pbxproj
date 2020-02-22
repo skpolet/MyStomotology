@@ -10,6 +10,13 @@
 		0CDE7BB393581D8EBCC39C67 /* Pods_MyStomotology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89EFF149F899C075D8E458D9 /* Pods_MyStomotology.framework */; };
 		E1AB908123D488BE006D4346 /* SplashAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB908023D488BE006D4346 /* SplashAssembler.swift */; };
 		E1AB908323D488D2006D4346 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB908223D488D2006D4346 /* SplashPresenter.swift */; };
+		E1B79F5223E3E8F3005DBB51 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B79F5123E3E8F3005DBB51 /* ErrorHandling.swift */; };
+		E1B79F6123E6D1B9005DBB51 /* MessageHandlingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B79F6023E6D1B8005DBB51 /* MessageHandlingProtocols.swift */; };
+		E1B79F6323E6D75C005DBB51 /* TableMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B79F6223E6D75B005DBB51 /* TableMessage.swift */; };
+		E1B79F6523E6D767005DBB51 /* AllertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B79F6423E6D767005DBB51 /* AllertMessage.swift */; };
+		E1B79F6A23E6D9C9005DBB51 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B79F6923E6D9C9005DBB51 /* Blocks.swift */; };
+		E1B79F6C23E6DDB2005DBB51 /* NotificationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B79F6B23E6DDB2005DBB51 /* NotificationMessage.swift */; };
+		E1B79F6E23E6DDDD005DBB51 /* StatusBarMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B79F6D23E6DDDD005DBB51 /* StatusBarMessage.swift */; };
 		E1C99A51235F0B900089AC79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C99A50235F0B900089AC79 /* AppDelegate.swift */; };
 		E1C99A5A235F0B930089AC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C99A59235F0B930089AC79 /* Assets.xcassets */; };
 		E1C99A5D235F0B930089AC79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C99A5B235F0B930089AC79 /* LaunchScreen.storyboard */; };
@@ -78,6 +85,13 @@
 		9472B3DC4D68EDC3E908596F /* Pods-MyStomotology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStomotology.debug.xcconfig"; path = "Target Support Files/Pods-MyStomotology/Pods-MyStomotology.debug.xcconfig"; sourceTree = "<group>"; };
 		E1AB908023D488BE006D4346 /* SplashAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembler.swift; sourceTree = "<group>"; };
 		E1AB908223D488D2006D4346 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		E1B79F5123E3E8F3005DBB51 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		E1B79F6023E6D1B8005DBB51 /* MessageHandlingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHandlingProtocols.swift; sourceTree = "<group>"; };
+		E1B79F6223E6D75B005DBB51 /* TableMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMessage.swift; sourceTree = "<group>"; };
+		E1B79F6423E6D767005DBB51 /* AllertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllertMessage.swift; sourceTree = "<group>"; };
+		E1B79F6923E6D9C9005DBB51 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		E1B79F6B23E6DDB2005DBB51 /* NotificationMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMessage.swift; sourceTree = "<group>"; };
+		E1B79F6D23E6DDDD005DBB51 /* StatusBarMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarMessage.swift; sourceTree = "<group>"; };
 		E1C99A4D235F0B900089AC79 /* MyStomotology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStomotology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C99A50235F0B900089AC79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1C99A59235F0B930089AC79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,6 +185,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E1B79F5323E3EAF8005DBB51 /* Error Handler */ = {
+			isa = PBXGroup;
+			children = (
+				E1B79F6023E6D1B8005DBB51 /* MessageHandlingProtocols.swift */,
+				E1B79F6223E6D75B005DBB51 /* TableMessage.swift */,
+				E1B79F6423E6D767005DBB51 /* AllertMessage.swift */,
+				E1B79F6B23E6DDB2005DBB51 /* NotificationMessage.swift */,
+				E1B79F6D23E6DDDD005DBB51 /* StatusBarMessage.swift */,
+			);
+			path = "Error Handler";
+			sourceTree = "<group>";
+		};
+		E1B79F6823E6D849005DBB51 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E1B79F6923E6D9C9005DBB51 /* Blocks.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		E1C99A44235F0B8F0089AC79 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +276,7 @@
 		E1C99A67235F0D880089AC79 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1B79F6823E6D849005DBB51 /* Utility */,
 				E1C99A68235F0DD60089AC79 /* Fonts */,
 			);
 			path = Resources;
@@ -297,6 +332,8 @@
 				E1C99AE2235F34090089AC79 /* ClinicsLoader.swift */,
 				E1C99AE4235F341E0089AC79 /* CommentsLoader.swift */,
 				E1C99AE6235F342B0089AC79 /* SharesLoader.swift */,
+				E1B79F5123E3E8F3005DBB51 /* ErrorHandling.swift */,
+				E1B79F5323E3EAF8005DBB51 /* Error Handler */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -560,9 +597,11 @@
 				E1C99AC1235F315A0089AC79 /* SettingsInteractor.swift in Sources */,
 				E1C99A86235F248F0089AC79 /* SplashView.swift in Sources */,
 				E1C99AEB235F34720089AC79 /* Share.swift in Sources */,
+				E1B79F6123E6D1B9005DBB51 /* MessageHandlingProtocols.swift in Sources */,
 				E1C99A94235F254E0089AC79 /* MedServicesPresenter.swift in Sources */,
 				E1C99AEF235F34860089AC79 /* Comment.swift in Sources */,
 				E1F2855F23605BCE00C564C7 /* BaseRouter.swift in Sources */,
+				E1B79F6E23E6DDDD005DBB51 /* StatusBarMessage.swift in Sources */,
 				E1C99AD5235F328D0089AC79 /* MapView.swift in Sources */,
 				E1C99AA1235F273E0089AC79 /* LoginPresenter.swift in Sources */,
 				E1C99AE9235F34670089AC79 /* Location.swift in Sources */,
@@ -573,6 +612,7 @@
 				E1C99AE7235F342B0089AC79 /* SharesLoader.swift in Sources */,
 				E1C99A9D235F27250089AC79 /* LoginAssembler.swift in Sources */,
 				E1C99AA7235F30010089AC79 /* ClinicInfoPresenter.swift in Sources */,
+				E1B79F6523E6D767005DBB51 /* AllertMessage.swift in Sources */,
 				E1C99A8E235F25120089AC79 /* MedServicesView.swift in Sources */,
 				E1C99AB9235F31200089AC79 /* ClinicInfoRouter.swift in Sources */,
 				E1C99ADD235F32C40089AC79 /* MapRouter.swift in Sources */,
@@ -580,10 +620,13 @@
 				E1AB908323D488D2006D4346 /* SplashPresenter.swift in Sources */,
 				E1F2855D23605A5D00C564C7 /* SplashRouter.swift in Sources */,
 				E1C99ACF235F32200089AC79 /* SharesRouter.swift in Sources */,
+				E1B79F6C23E6DDB2005DBB51 /* NotificationMessage.swift in Sources */,
 				E1C99A9F235F27330089AC79 /* LoginInteractor.swift in Sources */,
+				E1B79F6A23E6D9C9005DBB51 /* Blocks.swift in Sources */,
 				E1C99AAD235F30690089AC79 /* ClinicInfoTransition.swift in Sources */,
 				E1C99AA5235F2FEE0089AC79 /* ClinicInfoView.swift in Sources */,
 				E1C99AAF235F30880089AC79 /* ClinicInfoTransitionableView.swift in Sources */,
+				E1B79F6323E6D75C005DBB51 /* TableMessage.swift in Sources */,
 				E1C99ACB235F32070089AC79 /* SharesInteractor.swift in Sources */,
 				E1C99A51235F0B900089AC79 /* AppDelegate.swift in Sources */,
 				E1C99AC9235F31E60089AC79 /* SharesAssmbler.swift in Sources */,
@@ -611,6 +654,7 @@
 				E1C99AA9235F30250089AC79 /* ClinicInfoAssembler.swift in Sources */,
 				E1C99AE3235F34090089AC79 /* ClinicsLoader.swift in Sources */,
 				E1C99ABF235F314E0089AC79 /* SettingsAssembler.swift in Sources */,
+				E1B79F5223E3E8F3005DBB51 /* ErrorHandling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

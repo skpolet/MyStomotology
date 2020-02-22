@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class AllertMessage : MessageHandlingProtocol {
+    func showMessage(title: String?, subtitle: String?, typeMessage: TypeMessage, completion: Completion?) {
+        
+    }
+}

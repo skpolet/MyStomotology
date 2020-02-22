@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+enum NetworkingError {
+    case serverNotFound
+    case wrongRequest
+}
+
+protocol ErrorHandlingProtocol {
+    
+}
